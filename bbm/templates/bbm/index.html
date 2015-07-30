@@ -1,0 +1,124 @@
+<!-- paulcy.mboungou@gmail.com -->
+{% load staticfiles %}
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>BOOMBOXMUSIC</title>
+	<link rel="stylesheet" type="text/css" href="{% static "bbm/css/index.css" %}">
+</head>
+<body>
+	<center>
+		<table>
+			<tbody>
+				<tr>
+					<img src="{% static "bbm/images/bbm24.jpg" %}" width="90%" alt="BOOMBOXMUSIC"/>
+				</tr>
+			</tbody>
+		</table>
+	</center>
+		
+	<center>
+		<div class="menu">{% csrf_token %}
+    		<ul>
+	    		<li><span></span><a href="{% url 'bbm:index' %}">HOME</a></li>
+	    		<li><span></span><a href="{% url 'bbm:music' %}">MUSIC</a></li>
+	   			<li><span></span><a href="{% url 'bbm:videos' %}">VIDEOS</a></li>
+    			<li><span></span><a href="{% url 'bbm:photos' %}">PHOTOS</a></li>
+    			<li><span></span><a href="{% url 'bbm:members' %}">MEMBERS</a></li>
+    		</ul>
+		</div>	
+	</center>
+	<center>
+		<table width="100%">
+			<tbody>
+				<tr>
+					<td valign="top" class="welcome_msg">
+						<h1 align="center" >
+						<font color=#E6B85C size=6>BOOMBOXMUSIC RECORDS </font></h1> 
+
+       					<p1 ><font size=4.5 color=black  > &nbsp;&nbsp;&nbsp;&nbsp; BOOMBOXMUSIC is an independent English and French Record Label established in  2012 by <a href="https://www.facebook.com/pages/Doctor-H-Official/1501845983402122?ref=bookmarks"> DOCTOR H</a> and <a href="https://www.facebook.com/pages/HPM-Official/155463031188528"> HPM</a> in Congo.<br/> In 2014 Mr Farel ELLELY, a Congolese Millionaire, business magnate, computer programmer, the actual Chief executive officer of BOOMBOXMUSIC RECORDS &#8482 sign a contract with BOOMBOXMUSIC RECORDS and he is now the manager to the label. <br/> <br/>
+								 
+					      <strong>CHECK BOOMBOXMUSIC RECORDS ON: &nbsp; </strong><font  color=#0033CC style="Times Now Roman">
+						  <a href=" http://www.reverbnation.com/boomboxmusic8?profile_view_source=header_icon_nav  "> REVERBNATION</a>&nbsp;
+						  <a href=" https://soundcloud.com/boomboxmusic-tk "> SOUNDCLOUD</a> 
+                          <a href=" https://www.youtube.com/channel/UCjKf9L0Buc-CMyAT_O86P2g  "> YOUTUBE </a></font>		
+                               </font>
+						
+					</td>
+					<td width="34%" height="372">
+						<iframe title="YouTube video player" class="youtube-player" type="text/html" src="http://www.youtube.com/embed/IaRDdCY2pgU"  width="100%" height="372" frameborder="0" allowFullScreen></iframe>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</center><br/>
+
+	<center>
+	<table width="100%"  class="info">
+		<tbody >
+			<tr>
+				<td width="32%" height="400" >
+					<p>&nbsp; &nbsp; DOCTOR H - BDJOULE</p>
+        				<audio controls>
+					 <source src="{% static "bbm/music/DOCTOR H - BDJOULE .mp3" %}" type="audio/mp3" >
+	    				</audio> <br/>
+
+	    			<p>&nbsp; &nbsp; HPM - LLA</p>
+        				<audio controls>
+					 <source src="{% static "bbm/music/HPM - LLA.mp3" %}" type="audio/mp3" >
+	    				</audio> <br/>
+
+	    			<p>&nbsp; &nbsp; DOCTOR H - PARC EDEN</p>
+        				<audio controls>
+					 <source src="{% static "bbm/music/PARC EDEN - DOCTOR H.mp3" %}" type="audio/mp3" >
+	    				</audio> <br/>
+
+	    			<p>&nbsp; &nbsp; DOCTOR H - MON VRAI VISAGE</p>
+        				<audio controls>
+					 <source src="{% static "bbm/music/MON VRAI VISAGE - DOCTOR H.mp3" %}" type="audio/mp3" >
+	    				</audio> <br/><br/>
+
+	    			&nbsp; &nbsp;<a href="{% url 'bbm:music' %}">click for more music</a>
+        				
+
+				</td>
+				<td width="32%" height="400">
+					<center><img src="{% static "bbm/images/bbm1.jpg" %}"/>
+					<br/> 
+					<h1 align="center" >
+						<font color=#E6B85C size=5>BOOMBOXMUSIC RECORDS <br/>(Music My Weed) </font></h1>
+					</center>
+				</td>
+				<td width="36%" height="400">
+					<a class="twitter-timeline" href="https://twitter.com/boomboxmusic60" data-widget-id="626468684119212032">Tweets by @boomboxmusic60</a>
+
+					<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	</center><br/>
+
+	<center>
+		<table width="100%" class="footer">
+		<tbody>
+  			<tr>
+    			<th scope="col">POWERED BY</th>
+    			<th scope="col">ADDRESS</th>
+    			<th scope="col">CONTACT US</th>
+    			<th scope="col">BOOMBOXMUSIC RECORDS</th>
+  			</tr>
+  			<tr>
+  				<td valign="top"><br/>#KSC-CONGO<br> paulcy.mboungou@gmail.com <br>Copyright &copy; 2015 </td>
+    			<td valign="top"><br/>BOOMBOXMUSIC RECORDS &#8482<br>INDIA, Telangana State, Hyderabad - 500008<br> CHINA, CONGO BRAZZAVILLE</td>
+    			<td valign="top"><br/>Tel : (+91) 9700250406, <br>Email : boomboxmusic60@gmail.com<br/>Twitter: @boomboxmusic </td>
+    			<td><center><img src="{% static "bbm/images/bbm1.jpg" %}" width="25%"/></center></td>
+  			</tr>
+  		</tbody>
+		</table>
+	</center>
+
+</body>
+</html>

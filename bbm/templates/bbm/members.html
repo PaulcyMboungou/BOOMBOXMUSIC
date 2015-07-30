@@ -1,0 +1,78 @@
+<!-- paulcy.mboungou@gmail.com -->
+{% load staticfiles %}
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ABOUT US</title>
+	<link rel="stylesheet" type="text/css" href="{% static "bbm/css/index.css" %}">
+</head>
+<body>
+	<center>
+		<table>
+			<tbody>
+				<tr>
+					<img src="{% static "bbm/images/bbm24.jpg" %}" width="90%" alt="BOOMBOXMUSIC"/>
+				</tr>
+			</tbody>
+		</table>
+	</center>
+		
+	<center>
+		<div class="menu">{% csrf_token %}
+    		<ul>
+	    		<li><span></span><a href="{% url 'bbm:index' %}">HOME</a></li>
+	    		<li><span></span><a href="{% url 'bbm:music' %}">MUSIC</a></li>
+	   			<li><span></span><a href="{% url 'bbm:videos' %}">VIDEOS</a></li>
+    			<li><span></span><a href="{% url 'bbm:photos' %}">PHOTOS</a></li>
+    			<li><span></span><a href="{% url 'bbm:members' %}">MEMBERS</a></li>
+    		</ul>
+		</div>	
+	</center>
+
+	 <table width="90%" align="center" class="welcome_msg">
+  <tbody>
+    <tr>
+      <td valign="top" id="members">
+      
+      <h1 align="center"> <font color="#E6B85C">MEMBERS OF BOOMBOXMUSIC RECORDS </font></h1>
+      
+      <p ><h2><font color="#9999ff"> &nbsp; FAREL ELLELY: &nbsp; ( The Manager )</font></h2>
+      <font size="+1" color="#000000">Farel ELLELY is a Congolese Millionaire, business magnate, investor, computer programmer,  Chief executive officer of BOOMBOXMUSIC RECORDS  &#8482.</font>
+      </p>
+      
+      <p><h2><font color="#9999ff">&nbsp; DOCTOR H: &nbsp; (Rapper, Beat-maker, Song-writer)</font></h2>
+      <font size="+1" color="#000000">Doctor H, de son vrai nom Hardy KIBANGOU est un Rappeur, Compositeur, Beat-maker de nationalite congolaise, nee le 10 janvier 1993 a Brazzaville. Doctor H exerce le metier d'artiste depuis l'annee 2007, actuellement en Chine pour des raisons d'etudes, il n'a pas mis fin a sa carriere artistique, il continue dans la meme vison dans le but de meiux faire valoir son talent. Ses debut n'ont pas ete tres spectaculaire notamment avec le groupe "Dream Team" compose de Doctor H, Backklash, King Cedric et Zim Khazam, dont deux Rappeurs et deux chanteur. Ces dernier sont non seulement des membres du groupe mes aussi des amis d'enfant de Doctor H. Malheureusement soumis a des pressoins parentales, Doctor H n'a pas pu sortir de sa coquille jusqu'a ce qu'il quitte sa famille.</br> Quelque s'annees apres, toujours dans l'idee de mieux s'exprimer dans la musique, Doctor H fait la rencontre d'un Artiste d'origine Ghaneenne au nom de Flames residant au USA en Indianna qui est la tete de la Maison de Production HDMEZ. Evoluant dans ce secteur depuis plusieurs annees et plus experimente que HK vu son parcours musical, Flames s'interesse aux Beats et au Style de Rap de Doctor H. Ce dernier, impressionne par le talent de Doctor H , va lui proposer de travailler avec lui. Quelques mois apres, sans trop tarder Doctor H rejoint le groupe HDMEZ et apporte sa connaissances puis un changement s'est opere dans le tout. HK s'est senti alaise dans cette famille et a fait son possible d'apporter de la creativite qui a fait connaitre la Maison HDMEZ un succes etincellant. Toujours en collaboration avec HDMEZ, ne quittant pas le groupe, en 2014 Doctor H decide de creer son propre Label BOOMBOXMUSIC RECORDS &#8482 avec un proche a lui, HPM, de son vrai nom Paulcy MBOUNGOU egalement Rappeur avec qui il travaille depuis des annees sur des projets et des concepts purement musicaux dans l'optique de faire valoir leur Musique et de realiser leur plus grand Reve. Apres tant d'annees, les choses semblent s'ameliorer et les reves semblent devenir realite. Mais rien n'a encore ete fait, seul les resultat de leur Production nous en dira plus. </font>
+      </p>
+      
+      <p><h2><font color="#9999ff">&nbsp; HPM: &nbsp;  ( Rapper, Slammer, Song-writer, Stylist )</font></h2>
+     <font size="+1" color="#000000"> HPM, born under the name of PAULCY MBOUNGOU on the 31st May 1994, The REPUBLIC OF CONGO. HPM is a Rapper, Slammer, Song-writer, Stylist. HPM begins its artistic's life as a Slammer at the end of the year 2010 in a Slam crew: " Styl'oblique Brazzaville " which is one of the biggest groups of Slam in his country, based in the heart of the Congolese Capital City "Brazzaville" under walls of the FRENCH INSTITUTE OF CONGO, known as CCF. At the end of the year 2012, he travels in INDIA for study reasons, where HPM decides to launch into the "US Rap" with the support of his childhood friend DOCTOR H (Rapper, Beat-Maker, Song-writter) and they decide afterwards to create a Record Label called " BOOMBOXMUSIC RECORDS &#8482" of whom they work under until today. </font></br>
+     
+       
+      </p>
+      </td>
+    </tr>
+  </tbody>
+</table><br/>
+
+<center>
+		<table width="100%" class="footer">
+		<tbody>
+  			<tr>
+    			<th scope="col">POWERED BY</th>
+    			<th scope="col">ADDRESS</th>
+    			<th scope="col">CONTACT US</th>
+    			<th scope="col">BOOMBOXMUSIC RECORDS</th>
+  			</tr>
+  			<tr>
+  				<td valign="top"><br/>#KSC-CONGO<br> paulcy.mboungou@gmail.com <br>Copyright &copy; 2015 </td>
+    			<td valign="top"><br/>BOOMBOXMUSIC RECORDS<br>INDIA, Telangana State, Hyderabad - 500008<br> CHINA, CONGO BRAZZAVILLE</td>
+    			<td valign="top"><br/>Tel : (+91) 9700250406, <br>Email : boomboxmusic60@gmail.com<br/>Twitter: @boomboxmusic </td>
+    			<td><center><img src="{% static "bbm/images/bbm1.jpg" %}" width="25%"/></center></td>
+  			</tr>
+  		</tbody>
+		</table>
+	</center>
+
+</body>
+</html>
