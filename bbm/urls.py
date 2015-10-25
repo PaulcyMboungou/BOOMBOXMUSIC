@@ -2,6 +2,7 @@ from django.conf.urls import url
 from . import views
 
 urlpatterns = [
+	url(r'^base', views.base, name='base'),
 	url(r'^videos', views.videos, name='videos'),
 	url(r'^photos', views.photos, name='photos'),
 	url(r'^music', views.music, name='music'),

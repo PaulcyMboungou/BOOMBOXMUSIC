@@ -2,6 +2,11 @@ from django.shortcuts import render
 from django.http import HttpResponse
 from django.template import RequestContext, loader
 
+def base(request):
+	template = loader.get_template('bbm/base.html')
+	context = RequestContext(request, {})
+	return HttpResponse(template.render(context))
+
 def index(request):
 	template = loader.get_template('bbm/index.html')
 	context = RequestContext(request, {})

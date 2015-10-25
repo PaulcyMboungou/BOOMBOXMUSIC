@@ -1,8 +1,15 @@
+.bs-example-navbar-collapse-1{
+    background: #B2B2B2;
+    width: 100%;
+}
+
+
 @charset "utf-8";
 
 .menu {
     text-align: center;
     border-bottom: 1px solid white;
+
 }
 .menu > ul{
     background:#B2B2B2;
@@ -76,3 +83,11 @@
 .footer{
     background:#F5F5F5;
 }
+
+.parte1{
+    background:#B2B2B2;
+    text-align:right;
+}
+***************************************************************
+
+
