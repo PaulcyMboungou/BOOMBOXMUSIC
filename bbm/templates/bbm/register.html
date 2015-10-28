@@ -1,0 +1,88 @@
+{% load staticfiles %}
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Registe to BOOMBOXMUSIC</title>
+  <link rel="stylesheet" type="text/css" href="{% static "bbm/css/login.css" %}">
+</head>
+<body>
+        <button onclick="goBack()">Go Back</button>
+
+        <script>
+        function goBack() {
+            window.history.back();
+        }
+        </script>
+	<!-- <h3>Please Register </h3>
+	<hr>
+	<form action="" method="Post">
+  {% csrf_token %}
+  Username
+  <br />
+  <input type="text" name="username" placeholder="Username" required>
+  <br/><br/>
+  Password
+  <br />
+  <input type="password" name="password1" placeholder="password" required>
+  <br/>
+  <br/>
+  <font color="red"> {{ message }} </font>
+  <br> 
+  <br>
+  Confirm password
+  <br />
+  <input type="password" name="password2" placeholder="Confirm password" required>
+  <br/><br/>
+  Last name
+  <br />
+  <input type="text" name="lastname" placeholder="Lastname" required>
+  <br/><br/>
+  First name
+  <br />
+  <input type="text" name="firstname" placeholder="Firstname" required>
+  <br/><br/>
+  Email address
+  <br /> 
+  <input type="email" name="email" onclick="" placeholder="Email" required>
+  <br/><br/>
+  <input type="submit" class="btn btn-primary" value="register">
+</form>  -->
+
+<section class="container"><center>
+    <div class="login">
+      <h2>PLEASE REGISTER </h2>
+      <form method="post" action="">
+        {% csrf_token %}
+        Username
+        <br />
+        <input type="text" name="username" placeholder="Username" required>
+        <br/><br/>
+        Password
+        <br />
+        <input type="password" name="password1" placeholder="password" required><br/>
+        <br>
+        Confirm password
+        <br />
+        <input type="password" name="password2" placeholder="Confirm password" required>
+        <br/><br/>
+        Last name
+        <br />
+        <input type="text" name="lastname" placeholder="Lastname" required>
+        <br/><br/>
+        First name
+        <br />
+        <input type="text" name="firstname" placeholder="Firstname" required>
+        <br/><br/>
+        Email address
+        <br /> 
+        <input type="email" name="email" onclick="" placeholder="Email" required>
+        <br/><br/>
+        <p class="submit"><input type="submit" class="btn btn-primary" value="register"></p>
+      </form>
+    </div>
+    </center>
+  </section>
+<hr>
+</body>
+</html>
