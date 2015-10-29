@@ -11,8 +11,9 @@ from django.contrib.auth.models import UserManager
 from django.contrib.auth.hashers import (
 	check_password, is_password_usable, make_password,
 )
-
-# from .forms import SignupForm
+# from django.contrib.auth.views import login
+from django.views.decorators.csrf import csrf_protect
+# from django.contrib.auth import views as auth_views
 
 
 from .models import MyUser
@@ -51,11 +52,15 @@ def login(request):
 	# error = "Your entered details seems invalid , Please try again !"
 	# message = "Welcome back ! Login and Discuss with Your Congolese's Brothers"
 	
+	
 	if request.method == 'POST':
 		username = request.POST.get('username', '')
 		password = request.POST.get('password', '')
 		user = auth.authenticate(username=username , password=password)
 
+		# if not request.POST.get('remember_me'):request.session.set_expiry(0)
+  #   		return auth_views.login(request,{})
+		
 		if user is not None:
 			auth.login(request, user)
 			return HttpResponseRedirect('music.html')
@@ -70,6 +75,8 @@ def login(request):
 			})
 
 		return HttpResponse(template.render(context))
+
+ 
 
 def loggedin(request):
 	template = loader.get_template('loggedin.html')
